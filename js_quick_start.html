@@ -148,15 +148,15 @@
       <p><span class="keyword">Functions</span> are used to make the code "do things."</p>
       <p>To get the function to execute, you have to <strong>call the function</strong>  by using the function name followed by round brackets.</p>
       <p>If the credit card tap was a function in JavaScript, it could look something like this:</p>
-      <p><code>tapCard()</code></p>
+      <p><code>tapCard();</code></p>
     </article>
 
     <article class='slide slide-list'>
       <h2>Intro to Functions</h2>
       <p>We can create our own functions but there are already some handy ones built into JavaScript. There are three functions that are useful for testing and writing code.</p>
       <p>
-        <code>prompt()</code> and <code>alert()</code> show popups in the browser.
-        <code>document.write()</code> outputs text onto the page, aka the <strong>document</strong>.
+        <code>prompt();</code> and <code>alert();</code> show popups in the browser.
+        <code>document.write();</code> outputs text onto the page, aka the <strong>document</strong>.
       </p>
 <textarea class='coder-editor coder-editor-full'>SCRIPT
 
@@ -165,13 +165,17 @@
   document.write("document.write outputs text into the page.");
 
 SCRIPTEND</textarea>
+
+    <div class="reminders">
+      <p><code>document.write();</code> is a quick and easy way to output text onto the page but is not best practice for use in "the real world." <code>console.log();</code> is better.</p>
+    </div>
     </article>
 
     <!-- SLIDE: COMMENTS -->
     <article class='slide slide-list'>
       <h2>Comments</h2>
       <p>
-        Sometimes you want to write notes to yourself (and others!!) to organize blocks of code or leave explanations. Use comments! <strong>JavaScript will ignore comments and not execute them.</strong>
+        Sometimes you want to write notes to yourself (and others) to organize blocks of code or leave explanations. Use comments! <strong>JavaScript will ignore comments and not execute them.</strong>
       </p>
 <pre class='prettyprint'>
 // This is how you leave a single line comment.
@@ -215,8 +219,8 @@ want to write a longer message */
     <article class='slide slide-list'>
       <h2>Variables (cont'd)</h2>
       <br />
-      <p><img src="assets/computer-memory.jpg" alt="computer-memory" width="200" height="207" style="float:right;padding:0 40px 0 10px;" />Variables are also like the computer's short-term memory. It doesn't remember anything unless you tell it to.  In this example, the computer can't remember any one's name!</p>
-      <p><strong>But it can remember if we use a variable.</strong></p>
+      <p>Variables are also like the computer's short-term memory. It doesn't remember anything unless instructed.  In this example, the computer can't remember anybody's name!</p>
+      <p><strong>But it can remember it if we use a variable.</strong></p>
 <textarea class='coder-editor coder-editor-full'>SCRIPT
 
   // prompt() is a function for showing a popup
@@ -278,6 +282,7 @@ SCRIPTEND</script>
 <pre class='prettyprint'>var email;
 email = "hello@christinatruong.com";
 </pre>
+<p>is the same as</p>
 <pre class='prettyprint'>var email = "hello@christinatruong.com";</pre>
     </article>
 
@@ -624,8 +629,8 @@ SCRIPTEND</script>
     <article class='slide slide-list'>
       <h2><span style="font-size: 0.8em;">Arithmetic Operators: </span>Numbers vs. Strings</h2>
       <p>Remember how there are different variable types?  Arithmetic operators can only be performed on numerical values.</p>
-      <p>But numbers can come disguised as strings so be careful!</p>
-      <p>When the addition (<code>+</code>) operator is used on strings, it doesn't "add" values, it <span class="keyword">concatenates</span> them.</p>
+      <p>But numbers can be disguised as strings too!</p>
+      <p>When the addition (<code>+</code>) operator is used with string values, it doesn't "add" the values, it <span class="keyword">concatenates</span> them.</p>
 <textarea class='coder-editor'>SCRIPT
 
   var num1 = 20;
@@ -647,7 +652,8 @@ SCRIPTEND</script>
     <!-- SLIDE: CONCATENATION -->
     <article class='slide slide-list'>
       <h2>Concatenation</h2>
-      <p>Unlike the other arithmetic operators, the (+) symbol has another purpose other than adding numbers. It is used to join strings together, also known as <span class="keyword">concatenation</span>. You can concatenate variables, strings or a combination of both.</p>  
+      <p>Unlike the other arithmetic operators, the (<code>+</code>) symbol has another purpose other than adding numbers. It is used to join strings together, also known as <span class="keyword">concatenation</span>.</p>
+      <p>You can concatenate variables, strings or a combination of both.</p>  
 <textarea class='coder-editor coder-editor-full'>
 <script>
   document.write("Hello " + "Christina." + "<br />");
@@ -666,7 +672,7 @@ SCRIPTEND</script>
     <!-- SLIDE: CONCATENATION -->
     <article class='slide slide-list'>
       <h2>Concatenation and Strings</h2>
-      <p>If you use the (+) operator with only numerical values, it will add the values.  Otherwise, it will combine the outputs as a string.</p>
+      <p>If you use the (<code>+</code>) operator with <strong>only</strong> numerical values, it will add the values.  Otherwise, it will combine the outputs as a string.</p>
 <textarea class='coder-editor coder-editor-full'>
 <script>
   //Addition with the + operator
@@ -720,7 +726,7 @@ SCRIPTEND</script>
     <!-- SLIDE: INCREMENT AND DECREMENT -->
     <article class='slide slide-list'>
       <h2>Re-assigning Variables</h2>
-      <p>Even after a value has been set for the first time, we can still overwrite it and
+      <p>Even after a variable has been assigned a value, we can still overwrite it and
       <strong>re-assign</strong> a new value.</p>
       <p>For example, we may want to increase or decrease values.</p>
 <textarea class='coder-editor coder-editor-full'>SCRIPT
