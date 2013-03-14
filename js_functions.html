@@ -71,12 +71,12 @@
     <article class='slide slide-list'>
       <h2>Defining a Function</h2>
       <p>
-        To create a function, it needs to be <strong class="keyword">defined</strong>
+        To create a function, it needs to be <strong>defined</strong>
         first.
       </p>
       <p>
         There are different ways to define a function, but the most common way is using the
-        <code>function</code> <strong class="keyword">keyword</strong>.
+        <code>function</code> <em>keyword</em>.
       </p>
       <p>
         The keyword is followed by the function <strong class="keyword">name</strong>, of your choosing, and round brackets <code>()</code>. And finally, the code to be executed are enclosed within curly braces <code>{ }</code>.
@@ -91,8 +91,8 @@ function nameOfFunction() {
     <!-- SLIDE: CALLING FUNCTIONS -->
     <article class='slide slide-list'>
       <h2>Calling a Function</h2>
-      <p>Let's define a function called <code>sayMyName</code> and use <code>alert()</code> to get the computer to "say" our names. Functions can be used inside other functions too.</p>
-      <p>Note that the code within a function doesn't execute until it's <strong class="keyword">called</strong>.</p>
+      <p>Let's define a function called <code>sayMyName</code> and use <code>alert()</code> to get the computer to "say" our names. The code within a function doesn't execute until it's <span class="keyword">called</span>.</p>
+      <p>Functions can also be used inside other functions too.</p>
       <div class="hint single-line">
         <p>We've seen functions being called already!</p>
       </div>
@@ -129,7 +129,7 @@ SCRIPTEND</script>
         The browser executes the JavaScript as soon as the page loads.
       </p>
       <p>
-        But sometimes you need to control when it executes, like when someone rolls over a navigation item or presses a submit button. These are referred to as an events.
+        But sometimes you need to control when it executes, like when someone rolls over a navigation item or presses a submit button. These are referred to as an <span class="keyword">events</span>.
       </p>
       <p>In other words, functions can be used to execute events.</p>
 <textarea class='coder-editor coder-editor-full'>
@@ -250,7 +250,7 @@ SCRIPTEND
 
 <link rel="stylesheet" href="exercises/slides.css" type="text/css" />
 <div class="item">
-  <img src="http://pchen.github.com/LLC-JavaScript/exercises/assets/plush-android.jpg" width="195" height="195" />
+  <img src="http://christinatruong.com/LLC-JavaScript/exercises/assets/plush-android.jpg" width="195" height="195" />
   <br />
   <button onclick="addItem();">Add</button>
   <button onclick="removeItem();">Remove</button>
@@ -269,7 +269,7 @@ SCRIPTEND
     <article class='slide slide-list'>
       <h2>Functions in Functions</h2>
       <p>
-        Let's take another look at our code and see what the functions are doing.
+        Let's take a closer look at our functions.
       </p>
 <pre class="prettyprint">
 &lt;script&gt;
@@ -290,9 +290,9 @@ SCRIPTEND
 &lt;/script&gt;
 
 &lt;!-- HTML and CSS --&gt;
-&lt;link rel="stylesheet" href="http://pchen.github.com/LLC-JavaScript/exercises/slides.css" type="text/css" media="screen" /&gt;
+&lt;link rel="stylesheet" href="http://christinatruong.com/LLC-JavaScript/exercises/slides.css" type="text/css" media="screen" /&gt;
 &lt;div class="item"&gt;
-  &lt;img src="http://pchen.github.com/LLC-JavaScript/exercises/assets/plush-android.jpg" width="195" height="195" /&gt;
+  &lt;img src="http://christinatruong.com/LLC-JavaScript/exercises/assets/plush-android.jpg" width="195" height="195" /&gt;
   &lt;br /&gt;
   &lt;button onclick="<strong>addItem()</strong>;"&gt;Add&lt;/button&gt;
   &lt;button onclick="<strong>removeItem()</strong>;"&gt;Remove&lt;/button&gt;
@@ -311,7 +311,7 @@ SCRIPTEND
     <article class='slide slide-list'>
       <h2><div class="smaller">Mini-exercise (5-10 minutes):</div>
         Quantities and Total Cost</h2>
-      <p>Let's re-visit the Quantities exercise and add a text field to show the total cost. If the Android plushie cost $20 <strong>each</strong>, how do we calculate the total cost? </p>
+      <p>Let's re-visit the Quantities exercise and add a text field to show the total cost. If the Android plushie cost $20 <strong>each</strong>, how do we calculate the <strong>total cost</strong>? </p>
 
 <textarea class='coder-editor coder-editor-full'>SCRIPT
   var quantity = 0;
@@ -345,7 +345,7 @@ SCRIPTEND
 
 <link rel="stylesheet" href="exercises/slides.css" type="text/css" media="screen" />
 <div class="item">
-  <img src="http://pchen.github.com/LLC-JavaScript/exercises/assets/plush-android.jpg" width="195" height="195" /><br />  
+  <img src="http://christinatruong.com/LLC-JavaScript/exercises/assets/plush-android.jpg" width="195" height="195" /><br />  
   <div id="price">$20 each</div>
   <button onclick="addItem();">Add</button>
   <button onclick="removeItem();">Remove</button><br />
@@ -385,7 +385,7 @@ SCRIPTEND
 
 <link rel="stylesheet" href="exercises/slides.css" type="text/css" media="screen" />
 <div class="item">
-  <img src="http://pchen.github.com/LLC-JavaScript/exercises/assets/plush-android.jpg" width="195" height="195" /><br />  
+  <img src="http://christinatruong.com/LLC-JavaScript/exercises/assets/plush-android.jpg" width="195" height="195" /><br />  
   <div id="price">$20 each</div>
   <button onclick="addItem();">Add</button>
   <button onclick="removeItem();">Remove</button><br />
@@ -591,7 +591,7 @@ SCRIPTEND
     <article class='slide slide-list'>
       <h2>Review: Functions and Parameters</h2>
       <p>Functions are more flexible when used with parameters because variables can be <strong>passed</strong> into the function.</p>
-      <p>In the <code>makePizza()</code> function, the variables from inside the function were removed and added as parameters. Now when we call the function we can pass the values right into the function.</p>
+      <p>In the <code>makePizza()</code> function, the variables from inside the function were removed and added as parameters. Now when we <em>call</em> the function we can <em>pass</em> the values right into the function.</p>
       <img src="assets/function-parameters.jpg" alt="function-parameters" width="800" height="469" />
     </article>
 
@@ -637,7 +637,7 @@ SCRIPTEND
     <!-- SLIDE: Code Editor -->
     <article class='slide slide-list'>
       <h2>Using a Code Editor</h2>
-      <p>Go to the <code>exercises</code> folder and open up <code><a href="http://pchen.github.com/LLC-JavaScript/exercises/pizzaMaking.html" target="_blank">pizzaMaking.html</a></code><br>
+      <p>Go to the <code>exercises</code> folder and open up <code><a href="http://christinatruong.com/LLC-JavaScript/exercises/pizzaMaking.html" target="_blank">pizzaMaking.html</a></code><br>
 <span class="sidenote">(Psst: It's also in the ZIP folder that you downloaded earlier today.)</span>      </p>
       <div class="centered contains_sidebyside_icons">
         <a href="http://www.sublimetext.com" target="_blank"><img src="assets/SublimeTextIcon.jpg" width="125" height="125" alt="Sublime Text 2" /></a>
@@ -671,11 +671,11 @@ SCRIPTEND
       <p>2. Use inline JavaScript and write a new function that makes wings with these 3 variations:</p>
       <ul>
         <li>Style <span class="sidenote">e.g. crispy or regular</span></li>
-        <li>Hotness <span class="sidenote">e.g. mild, medium, hot</span></li>
+        <li>Spice Level <span class="sidenote">e.g. mild, medium, hot</span></li>
         <li>Sauce <span class="sidenote">e.g. BBQ, honey mustard, buffalo, Thai</span></li>
       </ul>
-      <p>3. Use function parameters and a single function to make the job of creating multiple types and flavours of wings easier -- versus writing multiple wing making functions.</p>
-      <p class="sidenote">If you're really stuck, go to the <code>solutions</code> folder and open up <code><a href="http://pchen.github.com/LLC-JavaScript/exercises/solutions/wingMaking.html" target="_blank">wingMaking.html</a></code>
+      <p>3. Use <em>parameters</em> in a single function to create multiple types and flavours of wings easier -- versus writing multiple wing making functions.</p>
+      <p class="sidenote">If you're really stuck, go to the <code>solutions</code> folder and open up <code><a href="http://christinatruong.com/LLC-JavaScript/exercises/solutions/wingMaking.html" target="_blank">wingMaking.html</a></code>
     </article>
     
     <!-- SLIDE: Next section -->
