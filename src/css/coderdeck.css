@@ -9,6 +9,9 @@ html, body {
 h1, h2, h3 {
   /*text-transform: uppercase;*/
 }
+.deck-container em {
+  font-weight: 600;
+}
 .deck-container #presentation {
 	
 }
@@ -123,8 +126,6 @@ h1, h2, h3 {
 }
 .deck-container .slide-list li li {
   font-size: 0.5em;
-}
-.deck-container .slide-list p {
 }
 
 .deck-container .slide-subhead h1 {
@@ -278,7 +279,7 @@ table.comparison-table tr td, table.comparison-table tr th {
 
 .keyword {
   color: #B1009A;
-  font-weight: bold !important;
+  font-weight: 600!important;
   font-style: italic !important;
 }
 
@@ -353,14 +354,29 @@ span.marker {
   font-style: italic !important;
 }
 
-/* intro slide */
+/* Styles for specific slides */
+.deck-container .get-started {
+  padding: 30px 110px 0;
+}
+  .deck-container .get-started h2 {
+    margin-bottom: 20px;
+  }
+  .deck-container .get-started a {
+    margin-top: 40px;
+    display: inline-block;
+  }
+
 .deck-container .intro h1 {
-  top: 140px;
+  top: 120px;
+  font-size: 60px;
 }
-.deck-container .intro .instructor_holder {
-  margin-top: 250px;
-}
-.instructor_holder img {
-  border-radius: 50%;
-}
+  .deck-container .intro .instructor_holder {
+    margin-top: 180px;
+  }
+  .instructor_holder img {
+    border-radius: 50%;
+  }
+  .instructor_holder a {
+    text-decoration: none;
+  }
 
