@@ -13,7 +13,7 @@ h1, h2, h3 {
   font-weight: 600;
 }
 .deck-container #presentation {
-	
+	margin-top: 15px;
 }
 .deck-container {
   /*font-family: 'Istok Web', Arial, sans-serif;*/
@@ -113,8 +113,8 @@ h1, h2, h3 {
   font-size: 1.8em;	
 }
 .deck-container .slide-list ul {
-    margin-left: 1em;
-    list-style-type: square;
+  margin-left: 1em;
+  /*list-style-type: square;*/
  	margin-bottom: 0.6em;
 }
 .deck-container .slide-list li {
