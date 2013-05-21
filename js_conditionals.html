@@ -611,7 +611,7 @@ SCRIPTEND</script>
 </script>
 
 <div id="exercise2" style="text-align: center;">
-  <img src="http://christinatruong.com/LLC-JavaScript/exercises/assets/plush-android.jpg" width="195" height="195" />
+  <img src="http://brennaobrien.com/LLC-JavaScript/exercises/assets/plush-android.jpg" width="195" height="195" />
   <br />
   <button onclick="addItem();">Add</button>
   <button onclick="removeItem();">Remove</button>
@@ -688,9 +688,7 @@ Address:
       </p>
       
       <div class="hint">
-        <p>1. Since there are multiple fields, we'll need to keep track of them. Simplest way would be to use a descriptively named variable that can hold a true or false value.<br />
-        2. Similiar to the previous exercise, use a conditional test so someone cannot supply any blank fields.<br />
-        3. Alert the right message to the user. (Hint: How do you test for something AND something else OR another thing at one time? Try looking at the cheatsheet on <a href="#slide-12" target="_blank">Slide #12</a> of this section.)
+        <p>1. Use a conditional to verify that ALL the fields have been filled in. (Hint: How do you test for something AND something else OR another thing at one time? Try looking at the cheatsheet on <a href="#slide-12" target="_blank">Slide #12</a> of this section.)
       </div>
 
 <textarea class='coder-editor coder-editor-full' data-save='exercise-complex-form-validation'>
@@ -704,25 +702,14 @@ function validateForm() {
   var postal = document.getElementById("postal").value;
 
   /* *** YOUR CODE _BELOW_ HERE **** */
-
-  /* 1. Declare 4 variables named 
-        "nameIsBlank", "addressIsBlank", "cityIsBlank", and "postalIsBlank" 
-        that will each hold Boolean values. */
-
-
-  /* 2a. Use conditional if/else statements on the variables 
-         "name", "address", "city", and "postal" to determine 
-         if each individual field is not blank.
-
-         Update their respective Boolean variables (e.g. "nameIsBlank") 
-         based on their individual if/else statements. */
-
-
-  /* 3. In a final conditional, test ALL FOUR Boolean variables 
-        and alert the proper message. Below are some alerts you can use. */
+  
+  /* 1. Use a conditional if/else statement to test for 
+  blank fields and alert the proper message. 
+  Below are some alerts you can use. */
 
   alert( "Sorry there are errors. Form fields cannot be blank!" );
   alert( "Thank you for your order!" );
+  
 
   /* *** YOUR CODE ^ABOVE^ HERE **** */
 }
@@ -744,11 +731,7 @@ Postal Code:
 <button onclick="validateForm()">Check out now!</button>
 </textarea>
 
-    <p class="solution-link">If you get stuck, <a href="exercises/solutions/complex-form-validation.txt" target="_blank">click here</a> for  the full solution and <a href="exercises/solutions/complex-form-validation-simplified.txt" target="_blank">here</a> for the simplified solution.<br />Or if you want to reset, <a href="exercises/solutions/complex-form-validation-org.txt" target="_blank">click here</a> for the original code.</p>
-
-      <p>
-        <strong>Bonus:</strong> There's always different ways to get to the same end goal. If you're finished early, try out different ways that you can reduce the number of variables and lines of code.
-      </p>
+    <p class="solution-link">If you get stuck, <a href="exercises/solutions/complex-form-validation.txt" target="_blank">click here</a> for the full solution.<br />Or if you want to reset, <a href="exercises/solutions/complex-form-validation-org.txt" target="_blank">click here</a> for the original code.</p>
 
     </article>
 
