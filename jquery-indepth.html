@@ -80,11 +80,11 @@
       <p>In jQuery, the document needs to be "ready". This bit of code needs to wrap all of your jQuery: <code>$(document).ready(function(){});</code>. Your code goes between the curly braces <code>{}</code>, and will only run once the DOM is ready.</p>
       
 <pre class="prettyprint">
-&lt;script type="text/javascript"&gt;
+&lt;script&gt;
   // JavaScript code here
 &lt;/script&gt;
 
-&lt;script type="text/javascript"&gt;    
+&lt;script&gt;    
   $(document).ready(function(){
      //jQuery code here
   });
@@ -235,20 +235,23 @@ div {
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;JavaScript example!&lt;/title&gt;
-    <strong>&lt;script type="text/javascript" src="scripts.js"&gt;&lt;/script&gt;</strong>  
+    <strong>&lt;script src="scripts.js"&gt;&lt;/script&gt;</strong>  
   &lt;/head&gt;
   &lt;body&gt;
     &lt;div id="example"&gt;This is an example.&lt;/div&gt;    
   &lt;/body&gt;
 &lt;/html&gt;
       </pre>
+      <div class="reminders">
+        <p>You might see script tags with the type attribute, <code>type="text/javascript"</code>, when looking at older code. We used to have to specify this, but it's no longer required in HTML5.</p>
+      </div>
     </article>   
       
     <!-- SLIDE: EXTERNAL FILES -->
     <article class='slide slide-list'>
       <h2>In the external file</h2>
-      <p>In the <a href="http://christinatruong.com/LLC-JavaScript/exercises/scripts.js" target="_blank">external JavaScript file (scripts.js)</a> you don't include script tags; just JavaScript code. </p>
-      <p>View this example: <a href="http://christinatruong.com/LLC-JavaScript/exercises/external-javascript.html" target="_blank">http://christinatruong.com/LLC-JavaScript/exercises/external-javascript.html</a></p>
+      <p>In the <a href="http://brennaobrien.com/LLC-JavaScript/exercises/scripts.js" target="_blank">external JavaScript file (scripts.js)</a> you don't include script tags; just JavaScript code. </p>
+      <p>View this example: <a href="http://brennaobrien.com/LLC-JavaScript/exercises/external-javascript.html" target="_blank">http://brennaobrien.com/LLC-JavaScript/exercises/external-javascript.html</a></p>
     </article>
       
     <!-- SLIDE: SCRIPT TAG GOTCHAS -->
@@ -257,7 +260,7 @@ div {
       <p>Even though you're not writing JavaScript between the script tags, you must use a closing <code>&lt;/script&gt;</code> tag. A self-closing tag such as <code>&lt;script src="scripts.js" /&gt;</code> will <strong>not</strong> work. The correct way is highlighted below:</p>
 
 <pre class="prettyprint">
-&lt;script type=&quot;text/javascript&quot; src="scripts.js"&gt;&lt;/script&gt;
+&lt;script src="scripts.js"&gt;&lt;/script&gt;
 </pre>
     </article>
 
@@ -267,16 +270,16 @@ div {
       <h2>jQuery: Getting started</h2>
       <p>To make use of the jQuery library, it needs to be included on the web page using an external file. There are two ways to include the file.</p>
 
-      <p>1. <a href="http://docs.jquery.com/Downloading_jQuery" target="_blank">Download</a> the jQuery library and include it with your files.</p>
+      <p>1. <a href="http://jquery.com/download" target="_blank">Download</a> the jQuery library and include it with your files.</p>
 <pre class="prettyprint">
-&lt;script type=&quot;text/javascript&quot; src="jquery.js"&gt;&lt;/script&gt;
+&lt;script src="jquery.js"&gt;&lt;/script&gt;
 </pre>
       <p>2. Link directly to the CDN (Content Delivery Network) hosted copies.</p>
 <pre class="prettyprint">
-&lt;script type=&quot;text/javascript&quot; src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="http://code.jquery.com/jquery-1.9.1.min.js"&gt;&lt;/script&gt;
 </pre>
       <div class="hint single-line">
-        <p>Download instructions: <a href="http://docs.jquery.com/Downloading_jQuery" target="_blank">http://docs.jquery.com/Downloading_jQuery</a></p>
+        <p>Download instructions: <a href="http://jquery.com/download" target="_blank">http://jquery.com/download</a></p>
       </div>
     </article>
 
@@ -286,8 +289,8 @@ div {
       <p>When adding your own custom-written jQuery/JavaScript files, make sure to include it <strong>after</strong> the jQuery file to ensure that the library loads first.</p>
 
 <pre class="prettyprint">
-&lt;script type=&quot;text/javascript&quot; src="jquery.js"&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot; src="custom.js"&gt;&lt;/script&gt;
+&lt;script src="jquery.js"&gt;&lt;/script&gt;
+&lt;script src="custom.js"&gt;&lt;/script&gt;
 </pre>
     </article>
 
@@ -430,7 +433,7 @@ $(document).ready(function(){
           </li>
         </ol>
         <div class="hint">
-          <p>jQuery effects documentation: <a href="http://docs.jquery.com/Effects" target="_blank">http://docs.jquery.com/Effects</a><br> 
+          <p>jQuery effects documentation: <a href="http://api.jquery.com/category/effects/" target="_blank">http://api.jquery.com/category/effects/</a><br> 
             jQuery click event documentation: <a href="http://api.jquery.com/click/" target="_blank">http://api.jquery.com/click/</a><br>
           Solutions posted in the solutions folder.</p>
         </div>
